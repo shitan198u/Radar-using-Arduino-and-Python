@@ -7,7 +7,7 @@ import numpy as np
 # Constants
 THETA_MIN = 0
 THETA_MAX = 180
-BAUD_RATE = 115200
+BAUD_RATE = 500000
 
 # Function to search for available serial ports
 def port_search():

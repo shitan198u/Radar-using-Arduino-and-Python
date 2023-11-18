@@ -27,6 +27,14 @@ This project involves creating a radar system using an ultrasonic sensor, an Ard
 
 ![Wiring Connection Diagram](Radar_Connections.jpg)
 
+## Radar Plot Diagram
+
+![Radar Plot Diagram](Radar.png)
+
+## Working Circuit
+
+![Working Circuit](working_circuit.jpg)
+
 ## Arduino Setup
 
 1. Connect the ultrasonic sensor to the Arduino:

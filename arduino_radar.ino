@@ -9,12 +9,12 @@ Servo myServo; // Creates a servo object for controlling the servo motor
 void setup() {  
   pinMode(trigPin, OUTPUT); // Sets the trigPin as an Output  
   pinMode(echoPin, INPUT); // Sets the echoPin as an Input  
-  Serial.begin(9600);  
+  Serial.begin(500000);  
   myServo.attach(3); // Defines on which pin is the servo motor attached  
 }  
 void loop() {  
   // rotates the servo motor from 15 to 165 degrees  
-  for(int i=15;i<=165;i++){   
+  for(int i=0;i<=180;i++){   
     myServo.write(i);  
     delay(30);  
     distance = calculateDistance();
@@ -23,7 +23,7 @@ void loop() {
     Serial.println(distance); // Sends the distance value into the Serial Port in a new line
   }  
   // Repeats the previous lines from 165 to 15 degrees  
-  for(int i=165;i>15;i--){   
+  for(int i=180;i>=0;i--){   
     myServo.write(i);  
     delay(30);  
     distance = calculateDistance();  
