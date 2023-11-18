@@ -13,6 +13,20 @@ This project involves creating a radar system using an ultrasonic sensor, an Ard
 - Computer with Python installed
 - (Optional) Breadboard for prototyping
 
+## Wiring Connections
+
+| Arduino UNO | Ultrasonic Sensor | Servo Motor |
+|-------------|---------------------|-------------|
+| (+5V) VCC   | VCC (Positive +)   | VCC (Red)   |
+| GND         | GND (Ground -)      | GND (Black) |
+| D10         | Trig Pin            | -           |
+| D9          | Echo Pin            | -           |
+| D3          | -                   | OUT (Orange)|
+
+## Wiring Connection Diagram
+
+![Wiring Connection Diagram](Radar_Connections.jpg)
+
 ## Arduino Setup
 
 1. Connect the ultrasonic sensor to the Arduino:
